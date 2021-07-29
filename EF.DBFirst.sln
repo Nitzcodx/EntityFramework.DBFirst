@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31515.178
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EF.DBFirst.DataAccessLayer", "EF.DBFirst.DataAccessLayer\EF.DBFirst.DataAccessLayer.csproj", "{9C6D3C9D-4924-4919-AC45-B63C3BD7F54B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EF.DBFirst.Console", "EF.DBFirst.Console\EF.DBFirst.Console.csproj", "{0D916191-06DD-40C2-8320-B5921DF25638}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9C6D3C9D-4924-4919-AC45-B63C3BD7F54B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9C6D3C9D-4924-4919-AC45-B63C3BD7F54B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9C6D3C9D-4924-4919-AC45-B63C3BD7F54B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9C6D3C9D-4924-4919-AC45-B63C3BD7F54B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0D916191-06DD-40C2-8320-B5921DF25638}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0D916191-06DD-40C2-8320-B5921DF25638}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0D916191-06DD-40C2-8320-B5921DF25638}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0D916191-06DD-40C2-8320-B5921DF25638}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {46A0939A-CF76-4DE0-9178-97D118C1D113}
+	EndGlobalSection
+EndGlobal
