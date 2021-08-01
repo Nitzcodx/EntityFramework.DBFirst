@@ -1,6 +1,8 @@
 ﻿using print = System.Console;
 using System;
 using EF.DBFirst.DataAccessLayer;
+using System.Collections.Generic;
+
 namespace EF.DBFirst.Console
 {
     class Program
@@ -9,17 +11,54 @@ namespace EF.DBFirst.Console
         {
             print.WriteLine("Hello World!");
             InSystRepository repository = new InSystRepository();
-            var customers = repository.GetAllCustomers();
-            foreach (var cust in customers) print.WriteLine($"{cust.CustId}: {cust.FirstName} {cust.LastName}");
-            print.WriteLine($"------------------------------------------------------------------------------");
-            customers = repository.GetSpecificCustomers('F');
-            foreach (var cust in customers) print.WriteLine($"{cust.CustId}: {cust.FirstName} {cust.Gender}");
-            print.WriteLine($"------------------------------------------------------------------------------");
-            var customer = repository.GetCustomer(1001);
-            print.WriteLine(customer.CustId);
-            print.WriteLine($"------------------------------------------------------------------------------");
-            customers = repository.GetCustomerUsingLike("%ore");
-            foreach (var cust in customers) print.WriteLine($"{cust.City}: {cust.FirstName}");
+
+            #region Read
+            //var customers = repository.GetAllCustomers();
+            //foreach (var cust in customers) print.WriteLine($"{cust.CustId}: {cust.FirstName} {cust.LastName}");
+            //print.WriteLine($"------------------------------------------------------------------------------");
+            //customers = repository.GetSpecificCustomers('F');
+            //foreach (var cust in customers) print.WriteLine($"{cust.CustId}: {cust.FirstName} {cust.Gender}");
+            //print.WriteLine($"------------------------------------------------------------------------------");
+            //var customer = repository.GetCustomer(1001);
+            //print.WriteLine(customer.CustId);
+            //print.WriteLine($"------------------------------------------------------------------------------");
+            //customers = repository.GetCustomerUsingLike("%ore");
+            //foreach (var cust in customers) print.WriteLine($"{cust.City}: {cust.FirstName}");
+            #endregion
+
+            #region Create
+
+            //repository.AddCredentials("Create Op", "CR3@T3oP");
+
+            //List<DataAccessLayer.Models.Credential> creds = new List<DataAccessLayer.Models.Credential>
+            //{
+            //    new DataAccessLayer.Models.Credential
+            //    {
+            //        UserName = "Range1",
+            //        UserPassword = "R@ng3!"
+            //    },
+            //    new DataAccessLayer.Models.Credential
+            //    {
+            //        UserName = "Range2",
+            //        UserPassword = "R@ng32"
+            //    }
+            //};
+            //repository.AddBulkCredentials(creds);
+
+            #endregion
+
+            #region Update
+            //repository.UpdatePassword("Range1", "R@ng31", "R@ng3!");
+            //string msg = String.Empty;
+            //repository.UpdateCustomerContact("UTUser", "UTPass", 1234567876, out msg);
+            //print.WriteLine(msg);
+
+            //repository.UpdateCredentials();
+            #endregion
+
+            #region Delete
+            //repository.DeleteCredentials();
+            #endregion
         }
     }
 }
