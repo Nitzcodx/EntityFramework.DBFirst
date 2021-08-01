@@ -59,6 +59,13 @@ namespace EF.DBFirst.Console
             #region Delete
             //repository.DeleteCredentials();
             #endregion
+
+            #region SQL/SP's/Functions
+            //var policies = repository.GetPoliciesUsingSQL();
+            //foreach (var policy in policies) print.WriteLine($"{policy.PolicyId} : {policy.PolicyType}");
+
+
+            #endregion  
         }
     }
 }

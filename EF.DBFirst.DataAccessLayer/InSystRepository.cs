@@ -235,5 +235,23 @@ namespace EF.DBFirst.DataAccessLayer
             }
             return status;
         }
+
+        public List<Policy> GetPoliciesUsingSQL()
+        {
+            List<Policy> policies = null;
+            try
+            {
+                policies = context.Policies.FromSqlRaw($"SELECT * FROM Policies").ToList();
+                //context.Database.ExecuteSqlRaw($"EXEC usp_<> {param1}") -- cannot exec usp with select command
+            }
+            catch (Exception)
+            {
+                policies = null;
+            }
+            return policies;
+        }
+
+
+
     }
 }
