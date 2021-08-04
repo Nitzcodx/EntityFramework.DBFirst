@@ -251,7 +251,5 @@ namespace EF.DBFirst.DataAccessLayer
             return policies;
         }
 
-
-
     }
 }

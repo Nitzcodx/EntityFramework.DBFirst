@@ -28,19 +28,19 @@ namespace EF.DBFirst.Console
 
             #region Create
 
-            //repository.AddCredentials("Create Op", "CR3@T3oP");
+            //repository.AddCredentials("", "");
 
             //List<DataAccessLayer.Models.Credential> creds = new List<DataAccessLayer.Models.Credential>
             //{
             //    new DataAccessLayer.Models.Credential
             //    {
-            //        UserName = "Range1",
-            //        UserPassword = "R@ng3!"
+            //        UserName = "",
+            //        UserPassword = ""
             //    },
             //    new DataAccessLayer.Models.Credential
             //    {
-            //        UserName = "Range2",
-            //        UserPassword = "R@ng32"
+            //        UserName = "",
+            //        UserPassword = ""
             //    }
             //};
             //repository.AddBulkCredentials(creds);
@@ -48,9 +48,9 @@ namespace EF.DBFirst.Console
             #endregion
 
             #region Update
-            //repository.UpdatePassword("Range1", "R@ng31", "R@ng3!");
+            //repository.UpdatePassword("", "", "");
             //string msg = String.Empty;
-            //repository.UpdateCustomerContact("UTUser", "UTPass", 1234567876, out msg);
+            //repository.UpdateCustomerContact("", "", 1234567876, out msg);
             //print.WriteLine(msg);
 
             //repository.UpdateCredentials();
